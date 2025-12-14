@@ -251,7 +251,8 @@ La interfaz está optimizada para smartwatches mediante el uso de ScalingLazyCol
 ---
 
 #### Pantalla Principal - Progreso Parcial
-![Wear OS - Progreso](<img width="232" height="226" alt="Captura de pantalla 2025-12-14 a la(s) 4 54 30 p m" src="https://github.com/user-attachments/assets/087a22ac-e98a-4c37-938a-eb49cd51309d" />)
+![Wear OS - Progreso]
+<img width="232" height="226" alt="Captura de pantalla 2025-12-14 a la(s) 4 54 30 p m" src="https://github.com/user-attachments/assets/087a22ac-e98a-4c37-938a-eb49cd51309d" />
 
 **Descripción:**
 Muestra la aplicación después de registrar 4 vasos de agua. El indicador circular refleja el 50% de progreso hacia la meta diaria de 8 vasos.
@@ -262,7 +263,8 @@ El indicador circular es ideal para pantallas circulares de smartwatches. El uso
 ---
 
 #### Pantalla Principal - Meta Alcanzada
-![Wear OS - Meta Alcanzada](<img width="232" height="226" alt="Captura de pantalla 2025-12-14 a la(s) 4 54 59 p m" src="https://github.com/user-attachments/assets/e19a7fef-4fea-4ce4-9918-af4dc1a32178" />)
+![Wear OS - Meta Alcanzada]
+<img width="232" height="226" alt="Captura de pantalla 2025-12-14 a la(s) 4 54 59 p m" src="https://github.com/user-attachments/assets/e19a7fef-4fea-4ce4-9918-af4dc1a32178" />
 
 
 **Descripción:**
