@@ -6,15 +6,19 @@ plugins {
 }
 
 android {
-    namespace = "com.escom.practica9martin"
+    namespace = "com.escom.practica9martin.mobile"
     compileSdk = 34
 
     defaultConfig {
         applicationId = "com.escom.practica9martin"
-        minSdk = 30
+        minSdk = 24
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
+
+        vectorDrawables {
+            useSupportLibrary = true
+        }
     }
 
     buildTypes {
@@ -39,17 +43,23 @@ android {
     buildFeatures {
         compose = true
     }
+
+    packaging {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        }
+    }
 }
 
 dependencies {
-    // Wear OS
-    implementation(libs.wear)
+    // Compose BOM
+    implementation(platform("androidx.compose:compose-bom:2024.01.00"))
+    implementation("androidx.compose.ui:ui")
+    implementation("androidx.compose.material3:material3")
+    implementation("androidx.compose.ui:ui-tooling-preview")
 
-    // Compose for Wear OS
-    implementation(libs.compose.material)
-    implementation(libs.compose.foundation)
+    // Activity Compose
     implementation(libs.activity.compose)
-    implementation(libs.core.splashscreen)
 
     // Lifecycle
     implementation(libs.lifecycle.runtime.ktx)
@@ -62,4 +72,11 @@ dependencies {
 
     // DataStore
     implementation("androidx.datastore:datastore-preferences:1.0.0")
+
+    // Core
+    implementation("androidx.core:core-ktx:1.12.0")
+
+    // Debug
+    debugImplementation("androidx.compose.ui:ui-tooling")
+    debugImplementation("androidx.compose.ui:ui-test-manifest")
 }

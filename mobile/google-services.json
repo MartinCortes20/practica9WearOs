@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "803852167194",
+    "project_id": "practica9-34a0c",
+    "storage_bucket": "practica9-34a0c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:803852167194:android:0a71ea9fae9c3a535c09a3",
+        "android_client_info": {
+          "package_name": "com.escom.practica9martin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUKSiw44wF6uMyDhwK22iSs3L4WywcFQE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

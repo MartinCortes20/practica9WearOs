@@ -1,10 +1,10 @@
-package com.escom.practica9.presentation.theme
+package com.escom.practica9martin.presentation.theme
 
 import androidx.compose.runtime.Composable
 import androidx.wear.compose.material.MaterialTheme
 
 @Composable
-fun Practica9Theme(
+fun Practica9MartinTheme(
     content: @Composable () -> Unit
 ) {
     /**
