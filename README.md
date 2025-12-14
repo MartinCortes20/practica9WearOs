@@ -277,7 +277,8 @@ El feedback visual inmediato motiva al usuario. El mensaje de éxito utiliza col
 
 #### Pantalla Principal - Interfaz Completa
 ![Mobile - Principal]
-![IMG_4888](https://github.com/user-attachments/assets/479775f7-3711-4702-942c-d04b2b798ad6)
+
+<img width="348" height="689" alt="Captura de pantalla 2025-12-14 a la(s) 4 59 39 p m" src="https://github.com/user-attachments/assets/65bf51f7-e74c-43de-93a5-a451d9d74db9" />
 
 
 **Descripción:**
@@ -295,7 +296,8 @@ La versión mobile aprovecha el espacio adicional para ofrecer funcionalidades e
 
 #### Diálogo de Cambio de Meta
 ![Mobile - Cambiar Meta]
-![IMG_4893](https://github.com/user-attachments/assets/c59849ca-ee69-4f7c-a8e1-befdfbc308d6)
+<img width="348" height="689" alt="Captura de pantalla 2025-12-14 a la(s) 4 59 54 p m" src="https://github.com/user-attachments/assets/14322c99-13ef-4f0a-8d48-6ba5508efb46" />
+
 
 
 
