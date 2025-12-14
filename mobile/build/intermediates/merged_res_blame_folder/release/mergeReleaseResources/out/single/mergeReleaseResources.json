@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.escom.practica9martin.mobile-release-51:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.escom.practica9martin.mobile-main-52:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.escom.practica9martin.mobile-release-51:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.escom.practica9martin.mobile-main-52:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.escom.practica9martin.mobile-release-51:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.escom.practica9martin.mobile-main-52:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.escom.practica9martin.mobile-release-51:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.escom.practica9martin.mobile-main-52:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.escom.practica9martin.mobile-release-51:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.escom.practica9martin.mobile-main-52:/mipmap-hdpi/ic_launcher.webp"
+    }
+]

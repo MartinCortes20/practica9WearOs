@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.7.3" type="incidents">
+
+    <incident
+        id="MissingFirebaseInstanceTokenRefresh"
+        severity="warning"
+        message="Apps that use Firebase Cloud Messaging should implement `onNewToken()` in order to observe token changes">
+        <location
+            file="${:mobile*debug*MAIN*sourceProvider*0*javaDir*0}/com/escom/practica9martin/service/MyFirebaseMessagingService.kt"
+            line="13"
+            column="7"
+            startOffset="418"
+            endLine="13"
+            endColumn="33"
+            endOffset="444"/>
+    </incident>
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the `android.os.Build.VERSION_CODES` javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 36"
+            oldString="34"
+            replacement="36"
+            priority="0"/>
+        <location
+            file="${:mobile*projectDir}/build.gradle.kts"
+            line="15"
+            column="9"
+            startOffset="353"
+            endLine="15"
+            endColumn="23"
+            endOffset="367"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.compose:compose-bom than 2024.01.00 is available: 2025.12.00">
+        <fix-replace
+            description="Change to 2025.12.00"
+            family="Update versions"
+            oldString="2024.01.00"
+            replacement="2025.12.00"
+            priority="0"/>
+        <location
+            file="${:mobile*projectDir}/build.gradle.kts"
+            line="56"
+            column="20"
+            startOffset="1136"
+            endLine="56"
+            endColumn="71"
+            endOffset="1187"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.firebase:firebase-bom than 32.7.0 is available: 34.7.0">
+        <fix-replace
+            description="Change to 34.7.0"
+            family="Update versions"
+            oldString="32.7.0"
+            replacement="34.7.0"
+            priority="0"/>
+        <location
+            file="${:mobile*projectDir}/build.gradle.kts"
+            line="69"
+            column="20"
+            startOffset="1575"
+            endLine="69"
+            endColumn="71"
+            endOffset="1626"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.datastore:datastore-preferences than 1.0.0 is available: 1.2.0">
+        <fix-replace
+            description="Change to 1.2.0"
+            family="Update versions"
+            oldString="1.0.0"
+            replacement="1.2.0"
+            priority="0"/>
+        <location
+            file="${:mobile*projectDir}/build.gradle.kts"
+            line="74"
+            column="20"
+            startOffset="1794"
+            endLine="74"
+            endColumn="68"
+            endOffset="1842"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.core:core-ktx than 1.12.0 is available: 1.17.0">
+        <fix-replace
+            description="Change to 1.17.0"
+            family="Update versions"
+            oldString="1.12.0"
+            replacement="1.17.0"
+            priority="0"/>
+        <location
+            file="${:mobile*projectDir}/build.gradle.kts"
+            line="77"
+            column="20"
+            startOffset="1876"
+            endLine="77"
+            endColumn="51"
+            endOffset="1907"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for androidx-compose-compose-bom"
+            robot="true">
+            <fix-replace
+                description="Replace with androidx-compose-bom = &quot;2024.01.00&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="androidx-compose-bom = &quot;2024.01.00&quot;&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/Desktop/Escuela/Semestre261/MovilesTarea/practica9/gradle/libs.versions.toml"
+                    startOffset="25"
+                    endOffset="25"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with androidx-compose-compose-bom = { module = &quot;androidx.compose:compose-bom&quot;, version.ref = &quot;androidx-compose-bom&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="androidx-compose-compose-bom = { module = &quot;androidx.compose:compose-bom&quot;, version.ref = &quot;androidx-compose-bom&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/Desktop/Escuela/Semestre261/MovilesTarea/practica9/gradle/libs.versions.toml"
+                    startOffset="196"
+                    endOffset="196"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.androidx.compose.compose.bom"
+                robot="true"
+                replacement="libs.androidx.compose.compose.bom"
+                priority="0">
+                <range
+                    file="${:mobile*projectDir}/build.gradle.kts"
+                    startOffset="1136"
+                    endOffset="1187"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:mobile*projectDir}/build.gradle.kts"
+            line="56"
+            column="20"
+            startOffset="1136"
+            endLine="56"
+            endColumn="71"
+            endOffset="1187"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for androidx-compose-ui-ui"
+            robot="true">
+            <fix-replace
+                description="Replace with androidx-compose-ui-ui = { module = &quot;androidx.compose.ui:ui&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="androidx-compose-ui-ui = { module = &quot;androidx.compose.ui:ui&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/Desktop/Escuela/Semestre261/MovilesTarea/practica9/gradle/libs.versions.toml"
+                    startOffset="196"
+                    endOffset="196"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.androidx.compose.ui.ui"
+                robot="true"
+                replacement="libs.androidx.compose.ui.ui"
+                priority="0">
+                <range
+                    file="${:mobile*projectDir}/build.gradle.kts"
+                    startOffset="1208"
+                    endOffset="1232"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:mobile*projectDir}/build.gradle.kts"
+            line="57"
+            column="20"
+            startOffset="1208"
+            endLine="57"
+            endColumn="44"
+            endOffset="1232"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for androidx-compose-material3-material3"
+            robot="true">
+            <fix-replace
+                description="Replace with androidx-compose-material3-material3 = { module = &quot;androidx.compose.material3:material3&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="androidx-compose-material3-material3 = { module = &quot;androidx.compose.material3:material3&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/Desktop/Escuela/Semestre261/MovilesTarea/practica9/gradle/libs.versions.toml"
+                    startOffset="196"
+                    endOffset="196"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.androidx.compose.material3.material3"
+                robot="true"
+                replacement="libs.androidx.compose.material3.material3"
+                priority="0">
+                <range
+                    file="${:mobile*projectDir}/build.gradle.kts"
+                    startOffset="1253"
+                    endOffset="1291"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:mobile*projectDir}/build.gradle.kts"
+            line="58"
+            column="20"
+            startOffset="1253"
+            endLine="58"
+            endColumn="58"
+            endOffset="1291"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for androidx-compose-ui-ui-tooling-preview"
+            robot="true">
+            <fix-replace
+                description="Replace with androidx-compose-ui-ui-tooling-preview = { module = &quot;androidx.compose.ui:ui-tooling-preview&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="androidx-compose-ui-ui-tooling-preview = { module = &quot;androidx.compose.ui:ui-tooling-preview&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/Desktop/Escuela/Semestre261/MovilesTarea/practica9/gradle/libs.versions.toml"
+                    startOffset="196"
+                    endOffset="196"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.androidx.compose.ui.ui.tooling.preview"
+                robot="true"
+                replacement="libs.androidx.compose.ui.ui.tooling.preview"
+                priority="0">
+                <range
+                    file="${:mobile*projectDir}/build.gradle.kts"
+                    startOffset="1312"
+                    endOffset="1352"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:mobile*projectDir}/build.gradle.kts"
+            line="59"
+            column="20"
+            startOffset="1312"
+            endLine="59"
+            endColumn="60"
+            endOffset="1352"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for com-google-firebase-firebase-bom8"
+            robot="true">
+            <fix-replace
+                description="Replace with com-google-firebase-firebase-bom6 = &quot;32.7.0&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="com-google-firebase-firebase-bom6 = &quot;32.7.0&quot;&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/Desktop/Escuela/Semestre261/MovilesTarea/practica9/gradle/libs.versions.toml"
+                    startOffset="25"
+                    endOffset="25"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with com-google-firebase-firebase-bom8 = { module = &quot;com.google.firebase:firebase-bom&quot;, version.ref = &quot;com-google-firebase-firebase-bom6&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="com-google-firebase-firebase-bom8 = { module = &quot;com.google.firebase:firebase-bom&quot;, version.ref = &quot;com-google-firebase-firebase-bom6&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/Desktop/Escuela/Semestre261/MovilesTarea/practica9/gradle/libs.versions.toml"
+                    startOffset="196"
+                    endOffset="196"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.com.google.firebase.firebase.bom8"
+                robot="true"
+                replacement="libs.com.google.firebase.firebase.bom8"
+                priority="0">
+                <range
+                    file="${:mobile*projectDir}/build.gradle.kts"
+                    startOffset="1575"
+                    endOffset="1626"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:mobile*projectDir}/build.gradle.kts"
+            line="69"
+            column="20"
+            startOffset="1575"
+            endLine="69"
+            endColumn="71"
+            endOffset="1626"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for com-google-firebase-firebase-messaging-ktx9"
+            robot="true">
+            <fix-replace
+                description="Replace with com-google-firebase-firebase-messaging-ktx9 = { module = &quot;com.google.firebase:firebase-messaging-ktx&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="com-google-firebase-firebase-messaging-ktx9 = { module = &quot;com.google.firebase:firebase-messaging-ktx&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/Desktop/Escuela/Semestre261/MovilesTarea/practica9/gradle/libs.versions.toml"
+                    startOffset="196"
+                    endOffset="196"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.com.google.firebase.firebase.messaging.ktx9"
+                robot="true"
+                replacement="libs.com.google.firebase.firebase.messaging.ktx9"
+                priority="0">
+                <range
+                    file="${:mobile*projectDir}/build.gradle.kts"
+                    startOffset="1647"
+                    endOffset="1691"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:mobile*projectDir}/build.gradle.kts"
+            line="70"
+            column="20"
+            startOffset="1647"
+            endLine="70"
+            endColumn="64"
+            endOffset="1691"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for com-google-firebase-firebase-database-ktx9"
+            robot="true">
+            <fix-replace
+                description="Replace with com-google-firebase-firebase-database-ktx9 = { module = &quot;com.google.firebase:firebase-database-ktx&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="com-google-firebase-firebase-database-ktx9 = { module = &quot;com.google.firebase:firebase-database-ktx&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/Desktop/Escuela/Semestre261/MovilesTarea/practica9/gradle/libs.versions.toml"
+                    startOffset="196"
+                    endOffset="196"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.com.google.firebase.firebase.database.ktx9"
+                robot="true"
+                replacement="libs.com.google.firebase.firebase.database.ktx9"
+                priority="0">
+                <range
+                    file="${:mobile*projectDir}/build.gradle.kts"
+                    startOffset="1712"
+                    endOffset="1755"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:mobile*projectDir}/build.gradle.kts"
+            line="71"
+            column="20"
+            startOffset="1712"
+            endLine="71"
+            endColumn="63"
+            endOffset="1755"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for androidx-datastore-datastore-preferences9"
+            robot="true">
+            <fix-replace
+                description="Replace with androidx-datastore-datastore-preferences7 = &quot;1.0.0&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="androidx-datastore-datastore-preferences7 = &quot;1.0.0&quot;&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/Desktop/Escuela/Semestre261/MovilesTarea/practica9/gradle/libs.versions.toml"
+                    startOffset="25"
+                    endOffset="25"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with androidx-datastore-datastore-preferences9 = { module = &quot;androidx.datastore:datastore-preferences&quot;, version.ref = &quot;androidx-datastore-datastore-preferences7&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="androidx-datastore-datastore-preferences9 = { module = &quot;androidx.datastore:datastore-preferences&quot;, version.ref = &quot;androidx-datastore-datastore-preferences7&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/Desktop/Escuela/Semestre261/MovilesTarea/practica9/gradle/libs.versions.toml"
+                    startOffset="196"
+                    endOffset="196"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.androidx.datastore.datastore.preferences9"
+                robot="true"
+                replacement="libs.androidx.datastore.datastore.preferences9"
+                priority="0">
+                <range
+                    file="${:mobile*projectDir}/build.gradle.kts"
+                    startOffset="1794"
+                    endOffset="1842"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:mobile*projectDir}/build.gradle.kts"
+            line="74"
+            column="20"
+            startOffset="1794"
+            endLine="74"
+            endColumn="68"
+            endOffset="1842"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for androidx-core-core-ktx"
+            robot="true">
+            <fix-replace
+                description="Replace with androidx-core-ktx = &quot;1.12.0&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="androidx-core-ktx = &quot;1.12.0&quot;&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/Desktop/Escuela/Semestre261/MovilesTarea/practica9/gradle/libs.versions.toml"
+                    startOffset="25"
+                    endOffset="25"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with androidx-core-core-ktx = { module = &quot;androidx.core:core-ktx&quot;, version.ref = &quot;androidx-core-ktx&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="androidx-core-core-ktx = { module = &quot;androidx.core:core-ktx&quot;, version.ref = &quot;androidx-core-ktx&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/Desktop/Escuela/Semestre261/MovilesTarea/practica9/gradle/libs.versions.toml"
+                    startOffset="196"
+                    endOffset="196"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.androidx.core.core.ktx"
+                robot="true"
+                replacement="libs.androidx.core.core.ktx"
+                priority="0">
+                <range
+                    file="${:mobile*projectDir}/build.gradle.kts"
+                    startOffset="1876"
+                    endOffset="1907"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:mobile*projectDir}/build.gradle.kts"
+            line="77"
+            column="20"
+            startOffset="1876"
+            endLine="77"
+            endColumn="51"
+            endOffset="1907"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for androidx-compose-ui-ui-tooling"
+            robot="true">
+            <fix-replace
+                description="Replace with androidx-compose-ui-ui-tooling = { module = &quot;androidx.compose.ui:ui-tooling&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="androidx-compose-ui-ui-tooling = { module = &quot;androidx.compose.ui:ui-tooling&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/Desktop/Escuela/Semestre261/MovilesTarea/practica9/gradle/libs.versions.toml"
+                    startOffset="196"
+                    endOffset="196"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.androidx.compose.ui.ui.tooling"
+                robot="true"
+                replacement="libs.androidx.compose.ui.ui.tooling"
+                priority="0">
+                <range
+                    file="${:mobile*projectDir}/build.gradle.kts"
+                    startOffset="1947"
+                    endOffset="1979"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:mobile*projectDir}/build.gradle.kts"
+            line="80"
+            column="25"
+            startOffset="1947"
+            endLine="80"
+            endColumn="57"
+            endOffset="1979"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for androidx-compose-ui-ui-test-manifest"
+            robot="true">
+            <fix-replace
+                description="Replace with androidx-compose-ui-ui-test-manifest = { module = &quot;androidx.compose.ui:ui-test-manifest&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="androidx-compose-ui-ui-test-manifest = { module = &quot;androidx.compose.ui:ui-test-manifest&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/Desktop/Escuela/Semestre261/MovilesTarea/practica9/gradle/libs.versions.toml"
+                    startOffset="196"
+                    endOffset="196"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.androidx.compose.ui.ui.test.manifest"
+                robot="true"
+                replacement="libs.androidx.compose.ui.ui.test.manifest"
+                priority="0">
+                <range
+                    file="${:mobile*projectDir}/build.gradle.kts"
+                    startOffset="2005"
+                    endOffset="2043"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:mobile*projectDir}/build.gradle.kts"
+            line="81"
+            column="25"
+            startOffset="2005"
+            endLine="81"
+            endColumn="63"
+            endOffset="2043"/>
+    </incident>
+
+</incidents>

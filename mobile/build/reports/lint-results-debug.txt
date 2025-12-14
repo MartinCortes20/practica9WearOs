@@ -1,0 +1,112 @@
+/Users/martinfranciscocortesbuendia/Desktop/Escuela/Semestre261/MovilesTarea/practica9/mobile/src/main/java/com/escom/practica9martin/service/MyFirebaseMessagingService.kt:13: Warning: Apps that use Firebase Cloud Messaging should implement onNewToken() in order to observe token changes [MissingFirebaseInstanceTokenRefresh]
+class MyFirebaseMessagingService : FirebaseMessagingService() {
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "MissingFirebaseInstanceTokenRefresh":
+   Apps that use Firebase Cloud Messaging should implement the
+   FirebaseMessagingService#onNewToken() callback in order to observe token
+   changes.
+
+   https://firebase.google.com/docs/cloud-messaging/android/client#monitor-token-generation
+
+/Users/martinfranciscocortesbuendia/Desktop/Escuela/Semestre261/MovilesTarea/practica9/mobile/build.gradle.kts:15: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
+        targetSdk = 34
+        ~~~~~~~~~~~~~~
+
+   Explanation for issues of type "OldTargetApi":
+   When your application runs on a version of Android that is more recent than
+   your targetSdkVersion specifies that it has been tested with, various
+   compatibility modes kick in. This ensures that your application continues
+   to work, but it may look out of place. For example, if the targetSdkVersion
+   is less than 14, your app may get an option button in the UI.
+
+   To fix this issue, set the targetSdkVersion to the highest available value.
+   Then test your app to make sure everything works correctly. You may want to
+   consult the compatibility notes to see what changes apply to each version
+   you are adding support for:
+   https://developer.android.com/reference/android/os/Build.VERSION_CODES.html
+   as well as follow this guide:
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.
+   html
+
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.html
+
+/Users/martinfranciscocortesbuendia/Desktop/Escuela/Semestre261/MovilesTarea/practica9/mobile/build.gradle.kts:56: Warning: A newer version of androidx.compose:compose-bom than 2024.01.00 is available: 2025.12.00 [GradleDependency]
+    implementation(platform("androidx.compose:compose-bom:2024.01.00"))
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/martinfranciscocortesbuendia/Desktop/Escuela/Semestre261/MovilesTarea/practica9/mobile/build.gradle.kts:69: Warning: A newer version of com.google.firebase:firebase-bom than 32.7.0 is available: 34.7.0 [GradleDependency]
+    implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/martinfranciscocortesbuendia/Desktop/Escuela/Semestre261/MovilesTarea/practica9/mobile/build.gradle.kts:74: Warning: A newer version of androidx.datastore:datastore-preferences than 1.0.0 is available: 1.2.0 [GradleDependency]
+    implementation("androidx.datastore:datastore-preferences:1.0.0")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/martinfranciscocortesbuendia/Desktop/Escuela/Semestre261/MovilesTarea/practica9/mobile/build.gradle.kts:77: Warning: A newer version of androidx.core:core-ktx than 1.12.0 is available: 1.17.0 [GradleDependency]
+    implementation("androidx.core:core-ktx:1.12.0")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+/Users/martinfranciscocortesbuendia/Desktop/Escuela/Semestre261/MovilesTarea/practica9/mobile/src/main/res/values/strings.xml:2: Warning: The resource R.string.app_name appears to be unused [UnusedResources]
+    <string name="app_name">HydroWatch Mobile</string>
+            ~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+/Users/martinfranciscocortesbuendia/Desktop/Escuela/Semestre261/MovilesTarea/practica9/mobile/build.gradle.kts:56: Warning: Use version catalog instead [UseTomlInstead]
+    implementation(platform("androidx.compose:compose-bom:2024.01.00"))
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/martinfranciscocortesbuendia/Desktop/Escuela/Semestre261/MovilesTarea/practica9/mobile/build.gradle.kts:57: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("androidx.compose.ui:ui")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/martinfranciscocortesbuendia/Desktop/Escuela/Semestre261/MovilesTarea/practica9/mobile/build.gradle.kts:58: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("androidx.compose.material3:material3")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/martinfranciscocortesbuendia/Desktop/Escuela/Semestre261/MovilesTarea/practica9/mobile/build.gradle.kts:59: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("androidx.compose.ui:ui-tooling-preview")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/martinfranciscocortesbuendia/Desktop/Escuela/Semestre261/MovilesTarea/practica9/mobile/build.gradle.kts:69: Warning: Use version catalog instead [UseTomlInstead]
+    implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/martinfranciscocortesbuendia/Desktop/Escuela/Semestre261/MovilesTarea/practica9/mobile/build.gradle.kts:70: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("com.google.firebase:firebase-messaging-ktx")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/martinfranciscocortesbuendia/Desktop/Escuela/Semestre261/MovilesTarea/practica9/mobile/build.gradle.kts:71: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("com.google.firebase:firebase-database-ktx")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/martinfranciscocortesbuendia/Desktop/Escuela/Semestre261/MovilesTarea/practica9/mobile/build.gradle.kts:74: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("androidx.datastore:datastore-preferences:1.0.0")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/martinfranciscocortesbuendia/Desktop/Escuela/Semestre261/MovilesTarea/practica9/mobile/build.gradle.kts:77: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("androidx.core:core-ktx:1.12.0")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/martinfranciscocortesbuendia/Desktop/Escuela/Semestre261/MovilesTarea/practica9/mobile/build.gradle.kts:80: Warning: Use version catalog instead [UseTomlInstead]
+    debugImplementation("androidx.compose.ui:ui-tooling")
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/martinfranciscocortesbuendia/Desktop/Escuela/Semestre261/MovilesTarea/practica9/mobile/build.gradle.kts:81: Warning: Use version catalog instead [UseTomlInstead]
+    debugImplementation("androidx.compose.ui:ui-test-manifest")
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UseTomlInstead":
+   If your project is using a libs.versions.toml file, you should place all
+   Gradle dependencies in the TOML file. This lint check looks for version
+   declarations outside of the TOML file and suggests moving them (and in the
+   IDE, provides a quickfix to performing the operation automatically).
+
+0 errors, 18 warnings

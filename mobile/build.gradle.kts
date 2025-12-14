@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.escom.practica9martin.mobile"
+    namespace = "com.escom.practica9martin"
     compileSdk = 34
 
     defaultConfig {

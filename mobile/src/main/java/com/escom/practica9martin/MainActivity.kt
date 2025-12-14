@@ -75,7 +75,7 @@ fun WaterScreen(viewModel: WaterViewModel) {
             modifier = Modifier.size(250.dp)
         ) {
             CircularProgressIndicator(
-                progress = { progress },
+                progress = progress,
                 modifier = Modifier.fillMaxSize(),
                 strokeWidth = 16.dp,
                 color = Color(0xFF03A9F4),

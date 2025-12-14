@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.7.3" type="partial_results">
+    <map id="NotificationPermission">
+        <location id="class"
+            file="$GRADLE_USER_HOME/caches/8.11.1/transforms/8ecadc53ae7da5f8292637484734312a/transformed/firebase-messaging-23.4.0/jars/classes.jar"/>
+        <entry
+            name="className"
+            string="com/google/firebase/messaging/DisplayNotification"/>
+        <entry
+            name="source"
+            boolean="true"/>
+    </map>
+    <map id="UnsafeIntentLaunch">
+            <map id="unprotected">
+                <entry
+                    name="com.escom.practica9martin.MainActivity"
+                    boolean="true"/>
+            </map>
+    </map>
+    <map id="UnusedResources">
+        <location id="R.string.app_name"
+            file="${:mobile*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="2"
+            column="13"
+            startOffset="24"
+            endLine="2"
+            endColumn="28"
+            endOffset="39"/>
+        <entry
+            name="model"
+            string="mipmap[ic_launcher(U)],string[app_name(D)];;;;"/>
+    </map>
+
+</incidents>
